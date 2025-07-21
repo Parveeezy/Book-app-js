@@ -2,9 +2,10 @@
   "name": "book-app",
   "version": "1.0.0",
   "description": "book application",
-  "keywords": [
-    "books"
-  ],
+  "main": "app.js",
+  "license": "ISC",
+  "author": "Parviz Shirinov",
+  "type": "module",
   "homepage": "https://github.com/Parveeezy/Book-app-js#readme",
   "bugs": {
     "url": "https://github.com/Parveeezy/Book-app-js/issues"
@@ -13,18 +14,17 @@
     "type": "git",
     "url": "git+https://github.com/Parveeezy/Book-app-js.git"
   },
-  "license": "ISC",
-  "author": "Parviz Shirinov",
-  "type": "module",
-  "main": "script.js",
+  "keywords": [
+    "books"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup"
-  },
-  "dependencies": {
-    "axios": "^1.10.0"
+    "start": "live-server",
+    "build": "rollup -c --watch"
   },
   "devDependencies": {
-    "rollup": "^4.45.1"
+    "eslint": "^9.31.0",
+    "rollup": "^4.45.1",
+    "rollup-plugin-import-css": "^4.0.1",
+    "@rollup/plugin-node-resolve": "^16.0.1"
   }
 }
